@@ -2,147 +2,254 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Covering Company | Future Skin</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nebula Auto | Architecture Lumineuse & Ciel Étoilé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="cyber-grid"></div>
-    <div class="cyber-glow"></div>
-
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#" class="brand">
-                <i class="fas fa-cube brand-icon"></i>
-                <div class="brand-text">
-                    COVERING<span> COMPANY</span>
-                </div>
-            </a>
-
-            <div class="nav-right">
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link active" data-text="Accueil">Accueil</a></li>
-                    <li><a href="#services" class="nav-link" data-text="Services">Services</a></li>
-                    <li><a href="#gallery" class="nav-link" data-text="Galerie">Galerie</a></li>
-                    <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
-                </ul>
-                <a href="#contact" class="btn-cyber nav-btn">
-                    <span>DEVIS</span>
-                </a>
-                
-                <button class="hamburger" id="hamburger" aria-label="Menu">
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </button>
+    <nav id="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">NEBULA<span class="highlight">AUTO</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#specs">Ciels Étoilés</a></li>
+                <li><a href="#ambient">Ambiance LED</a></li>
+                <li><a href="#process">Processus</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact" class="btn-nav">Devis Gratuit</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="container hero-wrapper">
-            <div class="hero-content">
-                <h1>NEXT GEN <br><span class="neon-text">VEHICLE SKIN</span></h1>
-                <p>L'atelier de transformation ultime. Total Covering, Protection PPF et Customisation lumineuse.</p>
-                
-                <div class="hero-actions">
-                    <a href="#services" class="btn-cyber primary">
-                        <span>EXPLORER</span>
-                    </a>
-                    <a href="#contact" class="btn-cyber secondary">
-                        <span>L'ATELIER</span>
-                    </a>
-                </div>
-
-                <div class="stats-row">
-                    <div class="stat">
-                        <span class="num" data-target="500">0</span>
-                        <span class="label">PROJETS</span>
-                    </div>
-                    <div class="stat">
-                        <span class="num" data-target="100">0</span>%
-                        <span class="label">QUALITÉ</span>
-                    </div>
-                </div>
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content fade-in">
+            <div class="badge">NOUVELLE GÉNÉRATION LED</div>
+            <h1>Luxe <br><span class="neon-text">& prestige</span></h1>
+            <p>Transformez votre habitacle en observatoire privé. Technologie fibre optique haute densité et intégration LED invisible.</p>
+            <div class="cta-group">
+                <a href="#specs" class="btn-primary">Configurer mon Ciel</a>
+                <a href="#ambient" class="btn-secondary">Ambiance led</a>
             </div>
+        </div>
+        <div class="scroll-down">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <section id="specs" class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Densité <span class="highlight">Stellaire</span></h2>
+            <p class="section-subtitle">Choisissez la complexité de votre ciel. Plus de fibres = Plus de réalisme.</p>
             
-            <div class="hero-visual">
-                <div class="visual-circle"></div>
-                <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=800&auto=format&fit=crop" alt="Cyber Car">
+            <div class="specs-grid">
+                <div class="spec-card reveal">
+                    <div class="spec-header">
+                        <h3>Orion</h3>
+                        <span class="price">Dès 590€</span>
+                    </div>
+                    <div class="fiber-count">400 - 600 Fibres</div>
+                    <ul class="spec-list">
+                        <li><i class="fa-solid fa-check"></i> Idéal pour Citadines / Compactes</li>
+                        <li><i class="fa-solid fa-check"></i> Scintillement (Twinkle Effect)</li>
+                        <li><i class="fa-solid fa-check"></i> 64 Couleurs via App</li>
+                        <li><i class="fa-solid fa-check"></i> 2 Étoiles filantes incluses</li>
+                    </ul>
+                    <a href="#contact" class="btn-spec">Sélectionner</a>
+                </div>
+
+                <div class="spec-card popular reveal">
+                    <div class="badge-pop">RECOMMANDÉ</div>
+                    <div class="spec-header">
+                        <h3>Galaxie</h3>
+                        <span class="price">Dès 890€</span>
+                    </div>
+                    <div class="fiber-count">800 - 1000 Fibres</div>
+                    <ul class="spec-list">
+                        <li><i class="fa-solid fa-check"></i> Idéal pour Berlines / SUV</li>
+                        <li><i class="fa-solid fa-check"></i> Densité Rolls-Royce Style</li>
+                        <li><i class="fa-solid fa-check"></i> Double Module RGBW</li>
+                        <li><i class="fa-solid fa-check"></i> 5 Étoiles filantes programmables</li>
+                    </ul>
+                    <a href="#contact" class="btn-spec glow-btn">Sélectionner</a>
+                </div>
+
+                <div class="spec-card reveal">
+                    <div class="spec-header">
+                        <h3>Nebula</h3>
+                        <span class="price">Sur Devis</span>
+                    </div>
+                    <div class="fiber-count">1500+ Fibres</div>
+                    <ul class="spec-list">
+                        <li><i class="fa-solid fa-check"></i> Couverture Totale (Grand SUV/Van)</li>
+                        <li><i class="fa-solid fa-check"></i> Constellations personnalisées</li>
+                        <li><i class="fa-solid fa-check"></i> Logos lumineux intégrés</li>
+                        <li><i class="fa-solid fa-check"></i> Garantie à vie</li>
+                    </ul>
+                    <a href="#contact" class="btn-spec">Sélectionner</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="section">
+    <section id="ambient" class="section-black">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">// MODULES</span>
-                <h2>NOS <span class="neon-text">EXPERTISE</span></h2>
+            <h2 class="section-title">Architecture <span class="highlight-sec">LED & Néon</span></h2>
+            <p class="section-subtitle">Redéfinissez les lignes de votre habitacle. Intégration OEM invisible éteinte, spectaculaire allumée.</p>
+
+            <div class="ambient-grid">
+                <div class="ambient-card reveal">
+                    <div class="ambient-icon"><i class="fa-solid fa-lines-leaning"></i></div>
+                    <div class="ambient-content">
+                        <h3>Contour Flow</h3>
+                        <p>Insertion de bandes LED ultra-fines (acrylique) dans les interstices du tableau de bord et des 4 portières. Diffusion homogène sans points visibles.</p>
+                    </div>
+                </div>
+
+                <div class="ambient-card reveal">
+                    <div class="ambient-icon"><i class="fa-solid fa-fan"></i></div>
+                    <div class="ambient-content">
+                        <h3>Turbines Lumineuses</h3>
+                        <p>Remplacement de vos aérateurs d'origine par des modèles "Turbine" rétro-éclairés. Synchronisation parfaite avec le reste du véhicule.</p>
+                    </div>
+                </div>
+
+                <div class="ambient-card reveal">
+                    <div class="ambient-icon"><i class="fa-solid fa-shoe-prints"></i></div>
+                    <div class="ambient-content">
+                        <h3>Zone Basse (Footwell)</h3>
+                        <p>Éclairage des caves à pieds (avant/arrière) et des poignées de porte. Création d'une profondeur visuelle et d'un sol lumineux.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="grid-system">
+            <div class="ambient-pricing reveal">
+                <div class="price-tag">
+                    <h3>Pack Full Ambiance</h3>
+                    <span class="big-price">Dès 490€</span>
+                </div>
+                <div class="price-features">
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Tableau de bord + 4 Portières</li>
+                        <li><i class="fa-solid fa-check"></i> 4 Caves à pieds (Footwell)</li>
+                        <li><i class="fa-solid fa-check"></i> Contrôle Multizone (App + Bouton)</li>
+                        <li><i class="fa-solid fa-check"></i> Mode "Music Sync" Réactif</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn-primary">Configurer mon Kit LED</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Ingénierie de <span class="highlight">Précision</span></h2>
+            <div class="process-container">
+                <div class="process-step reveal">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Démontage Soigné</h3>
+                        <p>Nous retirons le ciel de toit avec des outils spécialisés pour ne laisser aucune trace. Chaque clip et vis est répertorié. Protection intégrale de l'habitacle.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Perçage & Fibres</h3>
+                        <p>Perçage manuel de 400 à 1500 micro-trous selon le motif désiré. Insertion des fibres optiques PMMA de différents diamètres pour créer un effet de profondeur 3D.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Câblage & Isolation</h3>
+                        <p>Gestion des câbles "Factory Grade". Les fibres sont collées, coupées à ras et isolées pour éviter les vibrations. Installation du boîtier Bluetooth sur le 12V après contact.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Remontage & Calibration</h3>
+                        <p>Réinstallation du ciel de toit. Vérification des airbags et connectiques. Configuration de l'application mobile et démonstration des modes d'éclairage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-black">
+        <div class="container">
+            <h2 class="section-title">Le Choc <span class="highlight">Visuel</span></h2>
+            <p class="section-subtitle">Glissez le curseur pour révéler la métamorphose.</p>
+            
+            <div class="gallery-grid">
                 
-                <div class="cyber-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=600&auto=format&fit=crop" alt="Covering">
-                        <div class="overlay"></div>
+                <div class="gallery-card reveal">
+                    <div class="card-header">
+                        <h3>Transformation <span class="text-primary">Orion</span></h3>
+                        <p>Ciel de toit standard vs Ciel étoilé 600 fibres</p>
                     </div>
-                    <div class="card-body">
-                        <i class="fas fa-pa<int-brush card-icon"></i>
-                        <h3>Total Covering</h3>
-                        <p>Changement intégral de couleur. Finitions Mat, Satin, Gloss ou Carbone.</p>
-                        <div class="tech-lines">
-                            <span></span><span></span><span></span>
+                    <div class="img-comp-container">
+                        <div class="img-comp-img">
+                            <img src="https://images.unsplash.com/photo-1620590396452-e25180486c42?q=80&w=1000&auto=format&fit=crop" alt="Après Installation">
+                            <span class="label-after">NEBULA ACTIVÉ</span>
+                        </div>
+                        <div class="img-comp-img img-comp-overlay">
+                            <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1000&auto=format&fit=crop" alt="Avant Installation">
+                            <span class="label-before">ORIGINE</span>
+                        </div>
+                        <div class="slider-handle">
+                            <i class="fa-solid fa-arrows-left-right"></i>
                         </div>
                     </div>
                 </div>
 
-                <div class="cyber-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=600&auto=format&fit=crop" alt="Ciel Etoilé">
-                        <div class="overlay"></div>
+                <div class="gallery-card reveal">
+                    <div class="card-header">
+                        <h3>Pack <span class="text-secondary">Ambiance</span></h3>
+                        <p>Intégration LED tableau de bord & portières</p>
                     </div>
-                    <div class="card-body">
-                        <i class="fas fa-star card-icon"></i>
-                        <h3>Ciel Étoilé</h3>
-                        <p>Fibres optiques intégrées au pavillon. Ambiance Rolls-Royce avec contrôle RGB App.</p>
-                        <div class="tech-lines">
-                            <span></span><span></span><span></span>
+                    <div class="img-comp-container">
+                        <div class="img-comp-img">
+                            <img src="https://i.pinimg.com/originals/99/68/76/9968763529241b2c455848529202bf02.jpg" alt="Après LED">
+                            <span class="label-after">FULL LED</span>
+                        </div>
+                        <div class="img-comp-img img-comp-overlay">
+                            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1000&auto=format&fit=crop" alt="Avant LED">
+                            <span class="label-before">ORIGINE</span>
+                        </div>
+                        <div class="slider-handle">
+                            <i class="fa-solid fa-arrows-left-right"></i>
                         </div>
                     </div>
                 </div>
 
-                <div class="cyber-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=600&auto=format&fit=crop" alt="Déchromage">
-                        <div class="overlay"></div>
+                <div class="gallery-card reveal">
+                    <div class="card-header">
+                        <h3>Détail <span class="text-primary">Turbines</span></h3>
+                        <p>Remplacement des aérateurs d'origine</p>
                     </div>
-                    <div class="card-body">
-                        <i class="fas fa-mask card-icon"></i>
-                        <h3>Déchromage</h3>
-                        <p>Suppression des chromes pour un style "Black Pack" furtif et agressif.</p>
-                        <div class="tech-lines">
-                            <span></span><span></span><span></span>
+                    <div class="img-comp-container">
+                        <div class="img-comp-img">
+                            <img src="https://m.media-amazon.com/images/I/71u-F+q6aFL.jpg" alt="Après Turbines">
+                            <span class="label-after">TURBINES ON</span>
                         </div>
-                    </div>
-                </div>
-
-                <div class="cyber-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=600&auto=format&fit=crop" alt="Marine">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="card-body">
-                        <i class="fas fa-ship card-icon"></i>
-                        <h3>Marine Wrap</h3>
-                        <p>Protection de coque de bateau. Films résistants au sel et aux UV.</p>
-                        <div class="tech-lines">
-                            <span></span><span></span><span></span>
+                        <div class="img-comp-img img-comp-overlay">
+                            <img src="https://images.unsplash.com/photo-1599951667490-67c69996b27d?q=80&w=1000&auto=format&fit=crop" alt="Avant Turbines">
+                            <span class="label-before">STANDARD</span>
+                        </div>
+                        <div class="slider-handle">
+                            <i class="fa-solid fa-arrows-left-right"></i>
                         </div>
                     </div>
                 </div>
@@ -151,103 +258,85 @@
         </div>
     </section>
 
-    <section id="gallery" class="section bg-darker">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">// DATABASE</span>
-                <h2>RÉALISATIONS</h2>
-            </div>
-            <div class="comparison-wrapper">
-                <div class="comparison-slider">
-                    <div class="c-image c-after">
-                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800&auto=format&fit=crop" alt="Après">
-                        <span class="c-label">MATTE BLACK</span>
-                    </div>
-                    <div class="c-image c-before">
-                        <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=800&auto=format&fit=crop" style="filter: grayscale(1);" alt="Avant">
-                        <span class="c-label">ORIGINE</span>
-                    </div>
-                    <div class="c-handle">
-                        <div class="c-line"></div>
-                        <div class="c-circle"><i class="fas fa-arrows-alt-h"></i></div>
-                    </div>
+    <section class="testimonials">
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"J'ai pris le pack Galaxie sur ma Classe A. C'est juste dingue la nuit."</p>
+                    <span>- Thomas D.</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Installation propre, aucun fil qui dépasse. Le contrôle smartphone est top."</p>
+                    <span>- Sarah L.</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Le mode musique qui fait clignoter les étoiles sur les basses... incroyable."</p>
+                    <span>- Karim B.</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"L'ambiance LED change toute la voiture. Merci pour les conseils."</p>
+                    <span>- Julie M.</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section-dark">
         <div class="container">
-            <div class="contact-grid">
-                
+            <div class="contact-container reveal">
                 <div class="contact-info">
-                    <h2>INITIATE <br><span class="neon-text">PROTOCOL</span></h2>
-                    <p>Contactez l'atelier pour un devis précis.</p>
-                    
-                    <div class="info-block">
-                        <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
-                        <div>
-                            <span>LIGNE DIRECTE</span>
-                            <strong>01 23 45 67 89</strong>
-                        </div>
-                    </div>
-                    
-                    <div class="info-block">
-                        <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
-                        <div>
-                            <span>BASE OPÉRATIONNELLE</span>
-                            <strong>12 Rue de l'Innovation, Paris</strong>
-                        </div>
-                    </div>
-
-                    <div class="social-hud">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
+                    <h2>Lancement de <br><span class="highlight">Projet</span></h2>
+                    <p>Chaque véhicule est unique. Remplissez ce formulaire technique pour recevoir votre configuration personnalisée.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Atelier : Paris Sud (Sur RDV)</li>
+                        <li><i class="fa-solid fa-clock"></i> Installation : 1 à 2 jours</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> Garantie : 2 Ans Pièces & MO</li>
+                    </ul>
                 </div>
-
-                <form class="cyber-form" id="contactForm">
-                    <div class="form-header">
-                        <span>DATA_ENTRY</span>
-                        <div class="dots"><span></span><span></span><span></span></div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" required>
+                        <label>Nom Complet</label>
                     </div>
-                    <div class="input-group">
-                        <input type="text" required placeholder="IDENTITÉ (NOM)">
+                    <div class="form-group">
+                        <input type="email" required>
+                        <label>Email</label>
                     </div>
-                    <div class="input-group">
-                        <input type="tel" required placeholder="COMMUNICATION (TEL)">
+                    <div class="form-group">
+                        <input type="text" required>
+                        <label>Marque / Modèle / Année</label>
                     </div>
-                    <div class="input-group">
-                        <select>
-                            <option>SÉLECTIONNER MODULE</option>
-                            <option>Total Covering</option>
-                            <option>Déchromage</option>
-                            <option>Ciel Étoilé</option>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Service Souhaité</option>
+                            <option value="starry">Ciel Étoilé Uniquement</option>
+                            <option value="ambient">Pack Ambiance LED Uniquement</option>
+                            <option value="combo">COMBO : Ciel + Ambiance LED (Best Seller)</option>
+                            <option value="repair">Autre demande</option>
                         </select>
                     </div>
-                    <div class="input-group">
-                        <textarea rows="4" placeholder="DESCRIPTION DU PROJET..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-cyber full">
-                        <span>TRANSMETTRE</span>
-                    </button>
+                    <button type="submit" class="btn-submit">Demander mon Devis</button>
                 </form>
-
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container footer-wrapper">
-            <div class="footer-logo">COVERING<span>.CO</span></div>
-            <p>© 2024 SYSTEM ONLINE. ALL RIGHTS RESERVED.</p>
+        <div class="container">
+            <p>&copy; 2024 Nebula Auto. Éclairage automobile haute performance.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
         </div>
     </footer>
 
-    <button id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+    <a href="#" class="to-top"><i class="fa-solid fa-chevron-up"></i></a>
 
     <script src="script.js"></script>
 </body>
